@@ -12,15 +12,14 @@ class SetItem extends Model
     {
         return $this->belongsTo(Set::class);
     }
+    public function size()
+    {
+        return $this->belongsTo(Size::class);
+    }
 
     public function color()
     {
         return $this->belongsTo(Colors::class);
-    }
-
-    public function size()
-    {
-        return $this->belongsTo(Size::class);
     }
     public function product()
     {

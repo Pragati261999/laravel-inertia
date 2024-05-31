@@ -10,4 +10,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::get('/products/filter', [ProductController::class, 'filter']);
+Route::get('/products-items/filter', [ProductController::class, 'filter']);
